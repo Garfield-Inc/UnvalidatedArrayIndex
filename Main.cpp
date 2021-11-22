@@ -7,20 +7,19 @@ int main()
 	std::cin >> number;
 	std::cin >> value;
 
-	Entity e;
-	e.setSize(number, value);
+	setSize(number, value);
 
 	if (number >= 0 && number < 10)
-		e.fun(number, value);			// Compliant
+		fun(number, value);			
 
 	if (value >= 0 && value < 10)
-		e.fun(number, value);			// Non-compliant
+		fun(number, value);			
 
-	e.fun_ref(number, value);
+	fun_ref(number, value);
 	
-	e.foo(number, value);
+	foo(number, value);
 	
-	e.bar(number, value);
+	bar(number, value);
 
 	return 0;
 }
